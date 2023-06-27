@@ -1,0 +1,9 @@
+tasks:
+  - name: astro
+    command: |
+      cd frontend
+      npm install
+      npm run dev
+  - name: git
+    before: |
+      git log --pretty=oneline -10
