@@ -1,17 +1,23 @@
 <script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter();
 const props = defineProps({
-    title: String
+    title: String,
 });
+
+function navigateToHome() {
+    console.log("Called.");
+}
 </script>
 
 <template>
     <div class="functional-header">
-        <div class="title-block">
+        <div class="title-block" @click="navigateToHome">
             <h1 class="title">{{ props.title }}</h1>
         </div>
     </div>
 </template>
-
 <style>
 h1 {
     color: var(--text-color);
