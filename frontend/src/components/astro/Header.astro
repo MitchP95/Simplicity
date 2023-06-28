@@ -1,33 +1,31 @@
-<script setup>
-import { useRouter } from 'vue-router'
-
-const router = useRouter();
-const props = defineProps({
-    title: String,
-});
-
-function navigateToHome() {
-    console.log("Called.");
+---
+export interface Props {
+	title: string;
+    href: string;
 }
-</script>
 
-<template>
-    <div class="functional-header">
-        <div class="title-block" @click="navigateToHome">
-            <h1 class="title">{{ props.title }}</h1>
-        </div>
+const { title, href } = Astro.props;
+---
+
+<h1>test</h1>
+<a class="functional-header" href={href}>
+    <div class="title-block" @click="navigateToHome">
+        <h1 class="title">{ title }</h1>
     </div>
-</template>
+</a>
+
 <style>
 h1 {
     color: var(--text-color);
+    text-decoration: none;
+    
 }
 
 h1.title {
     padding: 10px 20px 12px 20px;
 }
 
-div.functional-header {
+a.functional-header {
     width: 100vw;
     height: fit-content;
     position: absolute;
@@ -35,12 +33,13 @@ div.functional-header {
     top: 0;
     background: var(--secondary-background);
     border-bottom: solid 1px var(--accent);
+    text-decoration: none;
 }
 
 .title-block {
     background: var(--background);
     border-radius: 15px;
-    box-shadow: 0px 4px 10px var(--accent);
+    box-shadow: 0px 2px 14px var(--accent);
     width: fit-content;
     height: fit-content;
     margin-left: 22px;
