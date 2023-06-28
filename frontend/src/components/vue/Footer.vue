@@ -9,7 +9,7 @@ const props = defineProps({
         <div class="about-block">
             <ul>
                 <li>Designed and built by Mitchell Puersten</li>
-                <li>Current in Pre-alpha</li>
+                <li>Currently in Pre-Alpha</li>
                 <li>MIT License</li>
             </ul>
         </div>
@@ -45,16 +45,16 @@ div.functional-footer {
     left: 0;
     bottom: 0;
     background: var(--background);
-    border-top: solid 1px var(--accent);
+
 }
 
 .about-block {
     background: var(--background);
     border-radius: 15px;
-    box-shadow: 0px 4px 10px var(--accent);
+    border: solid white 1px;
     width: fit-content;
     height: fit-content;
-    margin-left: 22px;
+    margin: 22px;
 }
 
 </style>
