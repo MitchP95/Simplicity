@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/vue": "^2.2.1",
+    "@syncfusion/ej2-vue-schedule": "^22.1.36",
     "astro": "^2.7.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"

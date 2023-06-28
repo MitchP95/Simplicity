@@ -9,7 +9,9 @@ import SimplicityCalendar from '../components/vue/SimplicityCalendar.vue'
 		<div class="control-pane">
 			<AddActivityButton client:load></AddActivityButton>
 		</div>
-		<!-- <SimplicityCalendar client:load></SimplicityCalendar> -->
+		<div class="calendar-container">
+			<SimplicityCalendar client:load></SimplicityCalendar>
+		</div>
 	</main>
 </Layout>
 
@@ -17,7 +19,7 @@ import SimplicityCalendar from '../components/vue/SimplicityCalendar.vue'
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		/* max-width: 60ch; */
 	}
 	
 	.control-pane {
@@ -26,5 +28,9 @@ import SimplicityCalendar from '../components/vue/SimplicityCalendar.vue'
 		justify-content: center;
 
 		margin: 20px;
+	}
+
+	.calendar-container {
+		height: 1000px;
 	}
 </style>

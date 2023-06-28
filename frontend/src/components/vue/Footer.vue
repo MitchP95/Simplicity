@@ -41,7 +41,7 @@ li {
 div.functional-footer {
     width: 100vw;
     height: fit-content;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     background: var(--background);
@@ -54,7 +54,8 @@ div.functional-footer {
     border: solid white 1px;
     width: fit-content;
     height: fit-content;
-    margin: 22px;
+    margin-left: 22px;
+    margin-bottom: 10px;
 }
 
 </style>

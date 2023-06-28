@@ -7,7 +7,7 @@ function launchActivityModal() {
 </script>
 
 <template>
-    <button @click="launchActivityModal">Add Activity</button>
+    <button @click="launchActivityModal">   +   </button>
 </template>
 
 <style>
@@ -19,7 +19,7 @@ function launchActivityModal() {
 
         padding: 12px;
         border: none;
-        border-radius: 12px;
+        border-radius: 25px;
     }
 
     button:hover {
