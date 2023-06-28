@@ -1,13 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import AddActivityButton from '../components/vue/AddActivityButton.vue';
+
 ---
 
 <Layout title="Simplicity">
 	<main>
-		<div class="control-pane">
-			<AddActivityButton client:load></AddActivityButton>
-		</div>
+		<h1>Sign-in</h1>
 	</main>
 </Layout>
 
@@ -17,12 +15,12 @@ import AddActivityButton from '../components/vue/AddActivityButton.vue';
 		padding: 1.5rem;
 		max-width: 60ch;
 	}
-	
-	.control-pane {
+	h1 {
 		display: flex;
-		align-items: center;
 		justify-content: center;
-
-		margin: 20px;
+		color: var(--text-color);
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
 	}
 </style>
